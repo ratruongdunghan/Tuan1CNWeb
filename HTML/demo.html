@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu li {
+            float: left;
+            background-color: rgb(20, 136, 146);
+            width: 150px;
+            height: 50px;
+            list-style: none;
+            line-height: 50px;
+            position: relative;
+            text-indent: 15px;
+
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        .menu li:hover {
+            background-color: rgb(190, 14, 161);
+
+        }
+
+        li:hover>a {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .menu li .sub-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .menu li:hover>.sub-menu {
+            display: block;
+        }
+
+        .menu li .sub-menu li:hover>.sub-menu {
+            top: 0px;
+            left: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            <a href="">HOME</a>
+        </li>
+        <li>
+            <a href="">
+                SERVICES
+            </a>
+        </li>
+        <li>
+            <a href="">CONTACT</a>
+
+            <ul class="sub-menu">
+                <li>
+                    <a href="">
+                        VIETTET
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        VINAPHONE
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        MOBIPHONE
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">INTERNET</a>
+                            <ul class="sub-menu">
+                                <li><a href="">ADSL</a></li>
+                                <li><a href=""> CÁP QUANG</a></li>
+                                <li><a href="">WIFI CC</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="">4G</a>
+                        </li>
+                        <li>
+                            <a href="">TIVI</a>
+                        </li>
+                </li>
+            </ul>
+    </ul>
+
+    </li>
+    <li>
+        <a href="">ABOUT</a>
+    </li>
+    <li>
+        <a href="">HELP</a>
+    </li>
+    </ul>
+
+
+
+</body>
+
+</html>
