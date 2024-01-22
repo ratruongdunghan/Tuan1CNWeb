@@ -13,21 +13,41 @@
         justify-content: center;
     } */
 
+    .wrapper {
+        border: 1px solid black;
+        margin: auto;
+        padding: 2%;
+        
+        
+    }
+
+    .title {
+        font-size: 10px;
+        color: #888;
+        font-weight: bold;
+        text-align: center;
+    }
+
     table,
     td,
     th {
         margin: auto;
         border: 1px solid black;
-
     }
 </style>
 
 
 <body>
     <div class="wrapper">
+        <div class="title">
+            <h1>
+                Classis Movie Day
+            </h1>
+
+        </div>
 
         <table>
-            
+
             <tr>
                 <th></th>
                 <th>5 pm</th>
@@ -36,7 +56,7 @@
                 <th>11 pm</th>
             </tr>
             <tr class="Screen-one">
-                <td>
+                <td style="width: 10px; text-align: center;">
                     <b>Screen one</b>
                 </td>
                 <td>
@@ -53,26 +73,27 @@
                 </td>
             </tr>
             <tr class="Screen-two">
-                <td>
+                <td style="width: 10px; text-align: center;">
                     <b>
                         Screen two
                     </b>
                 </td>
-                <td>
+                <td colspan="2">
                     Dances with Wolves
                 </td>
-                <td>
+
+                <td colspan="2">
                     Gone With the Wind
                 </td>
             </tr>
             <tr class="Screen-three">
-                <td>
+                <td style="width: 10px; text-align: center;">
 
                     <b>
                         Screen three
                     </b>
                 </td>
-                <td>
+                <td colspan="2">
                     2001:A Space Odyssey
                 </td>
                 <td>
@@ -84,6 +105,7 @@
             </tr>
 
         </table>
+
 
     </div>
 </body>
